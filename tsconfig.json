@@ -1,0 +1,42 @@
+{
+	"compilerOptions": {
+		"target": "es2020",
+		"useDefineForClassFields": true,
+		"lib": ["ESNext", "DOM", "DOM.Iterable"],
+		"module": "esnext",
+		"skipLibCheck": true,
+
+		/* Bundler mode */
+		"moduleResolution": "bundler",
+		"allowImportingTsExtensions": false,
+		"forceConsistentCasingInFileNames": true,
+		"isolatedModules": true,
+		"moduleDetection": "force",
+		"rootDir": "..",
+		"preserveSymlinks": false,
+		"esModuleInterop": true,
+		"noEmit": false,
+		"jsx": "react-jsx",
+		"allowJs": true,
+		"composite": false,
+
+		/* Linting */
+		"strict": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noFallthroughCasesInSwitch": true,
+		"noUncheckedSideEffectImports": true,
+
+		"paths": {
+			"@/*": ["./src/*"],
+			"ymaps3": ["./node_modules/@yandex/ymaps3-types"],
+			"@VEGIPOST/backend/*": ["../backend/*"]
+		}
+	},
+	"include": [
+		"src/**/*",
+		"../backend/src/**/*.ts",
+		"../backend/src/router/index.ts"
+	],
+	"exclude": ["node_modules"]
+}

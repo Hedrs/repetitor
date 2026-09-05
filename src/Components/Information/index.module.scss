@@ -1,0 +1,89 @@
+.container {
+	max-width: 1770px;
+	margin: 0 auto;
+	.logo {
+		display: inline;
+		font-family: 'Roboto Condensed', sans-serif;
+		font-size: 71px;
+		color: #255dc7;
+		font-weight: 500;
+		line-height: 36px;
+	}
+	.services {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+		font-family: 'Inter', sans-serif;
+		font-size: 22px;
+		font-weight: 500;
+	}
+	.textAboutMe {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		font-family: 'Inter', sans-serif;
+		font-size: 22px;
+		gap: 27px;
+		font-weight: 800;
+		line-height: 38px;
+		text-align: center;
+	}
+	.priceText {
+		display: flex;
+		align-items: baseline;
+		justify-content: space-between;
+		font-family: 'Inter', sans-serif;
+		font-size: 27px;
+		line-height: 40px;
+		font-weight: 500;
+	}
+	.showPrice {
+		cursor: pointer;
+		text-transform: uppercase;
+		text-align: center;
+		font-size: 27px;
+		font-weight: 800;
+		color: #0762f7;
+		border: 2px solid #0762f7;
+		border-radius: 16px;
+		padding: 23px 106px 16px 106px;
+		min-width: 682px;
+	}
+	.lessons {
+		font-family: 'Inter', sans-serif;
+		font-weight: bold;
+		color: #0762f7;
+		font-size: 22px;
+	}
+	.lessonsOfPeoples {
+		font-family: 'Inter', sans-serif;
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 40px;
+	}
+	.questions {
+		padding: 55px 0 47px 47px;
+		border-radius: 20px;
+		background: linear-gradient(to left, #111d33, #173a72);
+		color: white;
+		.questionsText {
+			font-family: 'Inter', sans-serif;
+			font-size: 33px;
+			font-weight: bold;
+		}
+		.writeMe {
+			margin-top: 1rem;
+			margin-bottom: 35px;
+			font-family: 'Inter', sans-serif;
+			font-weight: 500;
+			font-size: 24px;
+			line-height: 40px;
+		}
+	}
+	.ready {
+		margin-right: 175px;
+		margin-left: 41px;
+		color: white;
+		font-family: 'Inter', sans-serif;
+	}
+}

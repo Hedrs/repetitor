@@ -1,0 +1,24 @@
+@import 'tailwindcss';
+
+body {
+	height: 100%;
+	margin: 0;
+	background: linear-gradient(to bottom, #fff 50%, #d0def8 100%);
+	font-family: 'Roboto', sans-serif;
+	line-height: 36px;
+}
+
+code,
+.counter {
+	font-family: var(--mono);
+	display: inline-flex;
+	border-radius: 4px;
+	color: var(--text-h);
+}
+
+code {
+	font-size: 15px;
+	line-height: 135%;
+	padding: 4px 8px;
+	background: var(--code-bg);
+}

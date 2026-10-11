@@ -1,7 +1,7 @@
 export function TheAmount() {
 	return (
 		<svg
-			className='inline'
+			className='inline max-md:w-3.5 max-md:h-5.25'
 			width='45'
 			height='60'
 			viewBox='0 0 45 60'

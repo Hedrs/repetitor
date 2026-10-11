@@ -33,7 +33,7 @@ export function Modal({ startShow, isClose }: ModalProps) {
 		>
 			<div
 				onClick={isClose}
-				className='bg-black cursor-pointer absolute left-0 top-0 right-0 bottom-0 opacity-50 w-screen h-screen z-15 transition-all'
+				className='bg-black cursor-pointer absolute left-0 top-0 right-0 bottom-0 opacity-50 w-screen h-screen z-15'
 			></div>
 			<div className='min-w-2xl min-h-154 bg-white z-20 relative pl-13.25 pr-9 pb-21 rounded-[29px]'>
 				<span

@@ -1,6 +1,7 @@
 export function Clock() {
 	return (
 		<svg
+			className='max-md:w-7.75 max-md:h-7.75'
 			width='54'
 			height='54'
 			viewBox='0 0 54 54'

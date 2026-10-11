@@ -6,18 +6,45 @@
 	background-size: cover;
 	width: 100%;
 	padding-bottom: 69px;
+	@media (max-width: 712px) {
+		position: relative;
+		background-image: url();
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 100%;
+		padding-bottom: 0px;
+	}
 	.container {
 		max-width: 1770px;
 		margin: 0 auto;
+
+		@media (max-width: 712px) {
+			max-width: 326px;
+			margin: 0 auto;
+		}
+
 		.repetitor {
 			.free {
 				display: flex;
 				background: linear-gradient(to right, #025cfa, #0739b5);
 				align-items: center;
 				gap: 33px;
-				padding: 25px 49px 25px 35px;
+				padding: 21px 31px 21px 44px;
 				border-radius: 30px;
-				margin-bottom: 109px;
+				margin-bottom: 97px;
+				cursor: pointer;
+				@media (max-width: 712px) {
+					display: flex;
+					background: linear-gradient(to right, #025cfa, #0739b5);
+					align-items: center;
+					gap: 15px;
+					padding: 11px 10px 12px 25px;
+					border-radius: 20px;
+					margin-bottom: 41px;
+					width: 100%;
+					cursor: pointer;
+				}
 			}
 		}
 	}

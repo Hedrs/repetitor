@@ -1,6 +1,7 @@
 export function Convert() {
 	return (
 		<svg
+			className='w-9.5 h-6.75 max-xs:w-5.25 max-xs:h-3.5'
 			width='38'
 			height='27'
 			viewBox='0 0 38 27'

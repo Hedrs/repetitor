@@ -1,7 +1,7 @@
 export function Time() {
 	return (
 		<svg
-			className='ml-21'
+			className='max-md:ml-12.75 ml-21 max-md:w-24 max-md:h-3.25'
 			width='254'
 			height='34'
 			viewBox='0 0 254 34'

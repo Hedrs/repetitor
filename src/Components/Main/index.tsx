@@ -7,9 +7,10 @@ import { Modal } from '../Modal';
 import { useState } from 'react';
 import { Uravnenie } from './assets/Uravnenie';
 import { People } from './assets/People';
-import { Convert } from './assets/Convert';
+import { Convert } from './assets/Sdam';
 import { Individual } from './assets/Individual';
 import { Laptop } from './assets/Laptop';
+import main360 from './assets/Main360.png';
 
 export function Main() {
 	const [openModal, setOpenModal] = useState<boolean>(false);
@@ -19,51 +20,102 @@ export function Main() {
 			<div className={styles.wrapper}>
 				<div className={styles.container}>
 					<div className={styles.repetitor}>
-						<span className='inline-block py-1.5 px-6.5 bg-[#0867F9] text-white rounded-2xl text-[24px] leading-9 font-bold uppercase mt-26.5 mb-12.25'>
-							репетиторство по
-						</span>
-						<img className='mb-19.5' src={services} alt='Услуги' />
-						<Sdam />
-						<OnFive />
-						<p className='text-[33px] leading-11.75 font-semibold mb-13.75'>
-							Понимаю сложное. Объясняю просто. <br /> Помогаю{' '}
-							<span className='text-[#255DC7]'>достигать результата.</span>
-						</p>
-						<button className={styles.free} onClick={() => setOpenModal(true)}>
-							<span className='inline-block min-w-25.5 min-h-25.5 bg-white rounded-full relative'>
-								<Gift />
-							</span>{' '}
-							<p className='leading-9 text-start text-white'>
-								<span className='text-[29px] font-bold'>
-									ПЕРВОЕ ЗАНЯТИЕ БЕСПЛАТНО
-								</span>{' '}
-								<br />{' '}
-								<span className='text-[27px]'>Попробуй и убедись сам!</span>
+						<div
+							className='max-md:bg-auto max-md:bg-top max-md:bg-no-repeat` max-md:block hidden'
+							style={{ backgroundImage: `url(${main360})` }}
+						>
+							<span className='inline-block py-1.5 px-6.5 bg-[#0867F9] text-white rounded-2xl text-[22px] leading-9 font-bold uppercase mt-15.25 mb-10.75 max-md:mt-2.75 max-md:mb-3.75 max-md:text-[7px] max-md:leading-2.75 max-md:px-2 max-md:py-0.75'>
+								репетиторство по
+							</span>
+							<img
+								className='mb-19.5 max-md:w-[75%] max-md:mb-3.75'
+								src={services}
+								alt='Услуги'
+							/>
+							<Sdam />
+							<OnFive />
+							<p className='max-md:text-[10px] max-md:leading-3.25 text-[30px] leading-11.75 font-semibold mb-13.75 max-md:mb-58.25'>
+								Понимаю сложное. Объясняю просто. <br /> Помогаю{' '}
+								<span className='text-[#255DC7]'>достигать результата.</span>
 							</p>
-						</button>
+							<div className='max-md:text-center'>
+								<button
+									className={styles.free}
+									onClick={() => setOpenModal(true)}
+								>
+									<span className='inline-flex min-w-22.5 min-h-22.5 bg-white rounded-full justify-center items-center max-md:min-w-9 max-md:min-h-9'>
+										<Gift />
+									</span>{' '}
+									<p className='text-start text-white'>
+										<span className='max-md:text-[12px] max-md:leading-3 text-[25px] font-bold'>
+											ПЕРВОЕ ЗАНЯТИЕ БЕСПЛАТНО
+										</span>{' '}
+										<br />{' '}
+										<span className='max-md:text-[12px] max-md:leading-3 text-[23px] max-md:hidden'>
+											Попробуй и убедись сам!
+										</span>
+									</p>
+								</button>
+							</div>
+						</div>
+						<div className='max-md:hidden'>
+							<span className='inline-block py-1.5 px-6.5 bg-[#0867F9] text-white rounded-2xl text-[22px] leading-9 font-bold uppercase mt-15.25 mb-10.75 max-md:mt-2.75 max-md:mb-3.75 max-md:text-[7px] max-md:leading-2.75 max-md:px-2 max-md:py-0.75'>
+								репетиторство по
+							</span>
+							<img
+								className='mb-19.5 max-md:w-[75%] max-md:mb-3.75'
+								src={services}
+								alt='Услуги'
+							/>
+							<Sdam />
+							<OnFive />
+							<p className='max-md:text-[10px] max-md:leading-3.25 text-[30px] leading-11.75 font-semibold mb-13.75 max-md:mb-58.25'>
+								Понимаю сложное. Объясняю просто. <br /> Помогаю{' '}
+								<span className='text-[#255DC7]'>достигать результата.</span>
+							</p>
+							<div className='max-md:text-center'>
+								<button
+									className={styles.free}
+									onClick={() => setOpenModal(true)}
+								>
+									<span className='inline-flex min-w-22.5 min-h-22.5 bg-white rounded-full justify-center items-center max-md:min-w-9 max-md:min-h-9'>
+										<Gift />
+									</span>{' '}
+									<p className='text-start text-white'>
+										<span className='max-md:text-[12px] max-md:leading-3 text-[25px] font-bold'>
+											ПЕРВОЕ ЗАНЯТИЕ БЕСПЛАТНО
+										</span>{' '}
+										<br />{' '}
+										<span className='max-md:text-[12px] max-md:leading-3 text-[23px] max-md:hidden'>
+											Попробуй и убедись сам!
+										</span>
+									</p>
+								</button>
+							</div>
+						</div>
 						<Uravnenie />
-						<div className='flex items-center gap-13.5'>
+						<div className='max-md:justify-between max-md:text-center flex 3xl:gap-13.75 items-center'>
 							<div>
 								<People />{' '}
-								<p className='mt-5 text-[22px] leading-8.25 font-medium'>
+								<p className='max-md:text-[9px] max-md:mt-1.5 max-md:leading-3.25 mt-5 text-[22px] leading-8.25 font-medium'>
 									5 - 11 класс, <br /> студенты, взрослые
 								</p>
 							</div>
 							<div>
 								<Convert />
-								<p className='mt-5 text-[22px] leading-8.25 font-medium'>
+								<p className='max-md:text-[9px] max-md:mt-1.5 max-md:leading-3.25 mt-5 text-[22px] leading-8.25 font-medium'>
 									Подготовка <br /> к ОГЭ и ЕГЭ
 								</p>
 							</div>
 							<div>
 								<Individual />
-								<p className='mt-5 text-[22px] leading-8.25 font-medium'>
+								<p className='max-md:text-[9px] max-md:mt-1.5 max-md:leading-3.25 mt-5 text-[22px] leading-8.25 font-medium'>
 									Индивидуальный <br /> подход
 								</p>
 							</div>
 							<div>
 								<Laptop />
-								<p className='mt-5 text-[22px] leading-8.25 font-medium'>
+								<p className='max-md:text-[9px] max-md:mt-1.5 max-md:leading-3.25 mt-5 text-[22px] leading-8.25 font-medium'>
 									Онлайн занятия <br /> по видеосвязи
 								</p>
 							</div>

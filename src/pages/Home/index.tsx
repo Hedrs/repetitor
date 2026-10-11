@@ -1,5 +1,5 @@
 import { Main } from '../../Components/Main';
-import Layout from '../../Components/Layout/index';
+import Layout from '../../Components/Layout';
 import { Information } from '../../Components/Information';
 
 function Home() {

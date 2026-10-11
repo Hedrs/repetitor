@@ -1,6 +1,7 @@
 export function Progress() {
 	return (
 		<svg
+			className='max-md:w-7.25 max-md:h-7.25'
 			width='63'
 			height='69'
 			viewBox='0 0 63 69'

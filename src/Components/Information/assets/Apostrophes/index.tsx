@@ -1,7 +1,7 @@
 export function Apostrophe() {
 	return (
 		<svg
-			className=''
+			className='max-md:max-w-3 max-md:max-h-3'
 			width='38'
 			height='26'
 			viewBox='0 0 38 26'
@@ -19,7 +19,7 @@ export function Apostrophe() {
 export function ApostropheRotate() {
 	return (
 		<svg
-			className='rotate-180'
+			className='rotate-180 max-md:max-w-3 max-md:max-h-3'
 			width='38'
 			height='26'
 			viewBox='0 0 38 26'

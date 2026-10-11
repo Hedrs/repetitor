@@ -1,7 +1,7 @@
 export function OnFive() {
 	return (
 		<svg
-			className='absolute top-43.75 right-19.25'
+			className='absolute top-43.75 right-19.25 w-44.25 h-26.75 max-md:hidden'
 			width='177'
 			height='107'
 			viewBox='0 0 177 107'

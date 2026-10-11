@@ -1,8 +1,9 @@
 export function Telegram() {
 	return (
 		<svg
-			width='34'
-			height='27'
+			className='max-md:max-w-3.5 max-md:max-h-2.75'
+			width='25'
+			height='20'
 			viewBox='0 0 34 27'
 			fill='none'
 			xmlns='http://www.w3.org/2000/svg'

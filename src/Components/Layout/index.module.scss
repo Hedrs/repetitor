@@ -1,16 +1,65 @@
 .container {
+	position: relative;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	max-width: 1770px;
-	padding: 27px 0;
+	padding: 20px 0;
 	margin: 0 auto;
+
+	@media (max-width: 1512px) {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		max-width: 1397px;
+		padding: 20px 0;
+		margin: 0 auto;
+	}
+
+	@media (max-width: 712px) {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		max-width: 372px;
+		padding: 8px 0;
+		margin: 0 auto;
+	}
+
+	@media (max-width: 712px) {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		max-width: 326px;
+		padding: 8px 0;
+		margin: 0 auto;
+	}
+
 	.logo {
 		display: inline;
 		font-family: 'Roboto Condensed', sans-serif;
-		font-size: 71px;
+		font-size: 53px;
 		color: #255dc7;
 		font-weight: 500;
-		line-height: 36px;
+		line-height: 27px;
+		@media (max-width: 1512px) {
+			display: inline;
+			font-family: 'Roboto Condensed', sans-serif;
+			font-size: 42px;
+			color: #255dc7;
+			font-weight: 500;
+			line-height: 21px;
+		}
+
+		@media (max-width: 712px) {
+			display: inline;
+			font-family: 'Roboto Condensed', sans-serif;
+			font-size: 7px;
+			color: #255dc7;
+			font-weight: 500;
+			line-height: 10px;
+		}
 	}
 }

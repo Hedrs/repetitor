@@ -1,6 +1,10 @@
 .container {
 	max-width: 1770px;
 	margin: 0 auto;
+	@media (max-width: 712px) {
+		max-width: 326px;
+		margin: 0 auto;
+	}
 	.logo {
 		display: inline;
 		font-family: 'Roboto Condensed', sans-serif;
@@ -16,6 +20,11 @@
 		font-family: 'Inter', sans-serif;
 		font-size: 22px;
 		font-weight: 500;
+		@media (max-width: 712px) {
+			font-size: 8px;
+			gap: 8px;
+			line-height: 13px;
+		}
 	}
 	.textAboutMe {
 		display: flex;
@@ -27,6 +36,11 @@
 		font-weight: 800;
 		line-height: 38px;
 		text-align: center;
+		@media (max-width: 712px) {
+			font-size: 7px;
+			line-height: 13px;
+			gap: 9px;
+		}
 	}
 	.priceText {
 		display: flex;
@@ -36,6 +50,10 @@
 		font-size: 27px;
 		line-height: 40px;
 		font-weight: 500;
+		@media (max-width: 712px) {
+			font-size: 9px;
+			line-height: 14px;
+		}
 	}
 	.showPrice {
 		cursor: pointer;
@@ -54,22 +72,38 @@
 		font-weight: bold;
 		color: #0762f7;
 		font-size: 22px;
+		@media (max-width: 712px) {
+			font-size: 10px;
+			line-height: 12px;
+		}
 	}
 	.lessonsOfPeoples {
 		font-family: 'Inter', sans-serif;
 		font-weight: 500;
 		font-size: 24px;
 		line-height: 40px;
+		@media (max-width: 712px) {
+			font-size: 8px;
+			line-height: 13px;
+		}
 	}
 	.questions {
 		padding: 55px 0 47px 47px;
 		border-radius: 20px;
 		background: linear-gradient(to left, #111d33, #173a72);
 		color: white;
+		@media (max-width: 712px) {
+			padding: 18px 15px 15px 15px;
+			border-radius: 10px;
+		}
 		.questionsText {
 			font-family: 'Inter', sans-serif;
 			font-size: 33px;
 			font-weight: bold;
+			@media (max-width: 712px) {
+				font-size: 11px;
+				line-height: 12px;
+			}
 		}
 		.writeMe {
 			margin-top: 1rem;
@@ -78,6 +112,12 @@
 			font-weight: 500;
 			font-size: 24px;
 			line-height: 40px;
+			@media (max-width: 712px) {
+				margin-top: 6px;
+				margin-bottom: 12px;
+				font-size: 8px;
+				line-height: 13px;
+			}
 		}
 	}
 	.ready {
@@ -85,5 +125,9 @@
 		margin-left: 41px;
 		color: white;
 		font-family: 'Inter', sans-serif;
+		@media (max-width: 712px) {
+			margin-left: 9px;
+			margin-right: 37px;
+		}
 	}
 }

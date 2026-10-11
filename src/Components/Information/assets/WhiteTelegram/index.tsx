@@ -1,6 +1,7 @@
 export function WhiteTelegram() {
 	return (
 		<svg
+			className='max-md:w-6.25 max-md:h-6.25'
 			width='118'
 			height='118'
 			viewBox='0 0 118 118'

@@ -1,7 +1,7 @@
 export function QuotationMarks() {
 	return (
 		<svg
-			className='inline'
+			className='inline max-md:max-w-8.5 max-md:max-h-3.5'
 			width='85'
 			height='56'
 			viewBox='0 0 85 56'

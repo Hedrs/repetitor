@@ -1,6 +1,7 @@
 export function Birdie() {
 	return (
 		<svg
+			className='max-md:w-1.5 max-md:h-1.5'
 			width='16'
 			height='16'
 			viewBox='0 0 16 16'

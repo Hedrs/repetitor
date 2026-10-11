@@ -1,9 +1,7 @@
 export function Gift() {
 	return (
 		<svg
-			className='inline absolute top-[50%] right-0 bottom-0 left-[50%] translate-[-50%]'
-			width='45'
-			height='48'
+			className='w-11.25 h-12 max-md:w-4.5 max-md:h-4.5'
 			viewBox='0 0 45 48'
 			fill='none'
 			xmlns='http://www.w3.org/2000/svg'

@@ -1,8 +1,7 @@
 export function People() {
 	return (
 		<svg
-			width='47'
-			height='34'
+			className='w-11.75 h-11.75 max-md:w-6.5 max-md:h-6.5 max-md:ml-auto max-md:mr-auto'
 			viewBox='0 0 47 34'
 			fill='none'
 			xmlns='http://www.w3.org/2000/svg'

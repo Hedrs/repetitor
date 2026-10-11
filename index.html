@@ -1,13 +1,48 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>repetitor</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="./public/favicon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Описание под заголовком в поиске -->
+		<title>
+			Репетитор по информатике и математике онлайн — подготовка к ЕГЭ и ОГЭ |
+			infomathik
+		</title>
+
+		<meta
+			name="description"
+			content="Онлайн-репетитор по информатике и математике. Подготовка к ЕГЭ и ОГЭ, повышение успеваемости. Индивидуальные занятия, гибкий график, понятные объяснения. Первое занятие бесплатно."
+		/>
+
+		<!-- Ключевые слова (устарело, но не помешает) -->
+		<meta
+			name="keywords"
+			content="репетитор информатика, подготовка к ЕГЭ, ОГЭ, математика, онлайн занятия"
+		/>
+
+		<!-- Для соцсетей (когда делятся ссылкой) -->
+		<meta property="og:title" content="Инфоматика — репетитор по информатике" />
+		<meta
+			property="og:description"
+			content="Подготовка к ЕГЭ и ОГЭ по информатике и математике"
+		/>
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://infomathik.ru" />
+		<meta property="og:image" content="https://infomathik.ru/preview.jpg" />
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "EducationalOrganization",
+				"name": "infomathik — репетитор по информатике и математике",
+				"url": "https://infomathik.ru",
+				"description": "Онлайн-занятия по информатике и математике: подготовка к ЕГЭ и ОГЭ, повышение успеваемости.",
+				"priceRange": "850-1000 RUR"
+			}
+		</script>
+	</head>
+	<body>
+		<div id="root"></div>
+		<script type="module" src="/src/main.tsx"></script>
+	</body>
 </html>

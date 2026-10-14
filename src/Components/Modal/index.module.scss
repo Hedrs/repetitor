@@ -22,3 +22,89 @@
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition-duration: 150ms;
 }
+
+.openModal {
+	padding: 16px;
+	grid-template-columns: minmax(0, 1fr);
+	place-content: normal;
+	place-items: center;
+}
+
+.backdrop {
+	position: fixed;
+	inset: 0;
+}
+
+.dialog {
+	width: 672px;
+	max-width: min(100%, calc(100vw - 32px));
+	min-width: 0;
+	max-height: calc(100dvh - 32px);
+	overflow-y: auto;
+
+	> span {
+		display: grid;
+		place-items: center;
+		width: 44px;
+		height: 44px;
+	}
+
+	a > span:first-child {
+		min-width: 0;
+	}
+
+	svg {
+		flex-shrink: 0;
+	}
+}
+
+@media (max-height: 700px) {
+	.dialog {
+		min-height: 0;
+	}
+}
+
+@media (max-width: 711.98px) {
+	.dialog {
+		min-height: 0;
+		padding: 24px 20px;
+		border-radius: 20px;
+		line-height: 24px;
+
+		> span {
+			top: 4px;
+			right: 4px;
+		}
+
+		> p:first-of-type {
+			margin-top: 24px;
+			font-size: 26px;
+			line-height: 34px;
+		}
+
+		> p:nth-of-type(2) {
+			font-size: 16px;
+			line-height: 24px;
+		}
+
+		> div {
+			margin-top: 24px;
+		}
+
+		a {
+			padding: 12px;
+			gap: 8px;
+			font-size: 14px;
+			line-height: 22px;
+
+			> span:first-child {
+				gap: 12px;
+			}
+		}
+
+		svg {
+			width: 36px;
+			height: 36px;
+		}
+	}
+}

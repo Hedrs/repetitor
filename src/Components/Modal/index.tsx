@@ -33,9 +33,9 @@ export function Modal({ startShow, isClose }: ModalProps) {
 		>
 			<div
 				onClick={isClose}
-				className='bg-black cursor-pointer absolute left-0 top-0 right-0 bottom-0 opacity-50 w-screen h-screen z-15'
+				className={`${styles.backdrop} bg-black cursor-pointer opacity-50 z-15`}
 			></div>
-			<div className='min-w-2xl min-h-154 bg-white z-20 relative pl-13.25 pr-9 pb-21 rounded-[29px]'>
+			<div className={`${styles.dialog} min-w-2xl min-h-154 bg-white z-20 relative pl-13.25 pr-9 pb-21 rounded-[29px]`} role='dialog' aria-modal='true' aria-label='Написать мне'>
 				<span
 					onClick={isClose}
 					className='absolute right-9 top-7.75 text-[#0867F9] cursor-pointer text-[22px]'

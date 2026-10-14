@@ -6,7 +6,7 @@
 	background-size: cover;
 	width: 100%;
 	padding-bottom: 69px;
-	@media (max-width: 712px) {
+	@media (max-width: 711.98px) {
 		position: relative;
 		background-image: url();
 		background-position: center;
@@ -46,6 +46,168 @@
 					cursor: pointer;
 				}
 			}
+		}
+	}
+}
+
+.wrapper .container {
+	width: calc(100% - 32px);
+	max-width: 1770px;
+}
+
+@media (min-width: 712px) and (max-width: 1811px) {
+	.wrapper {
+		padding-bottom: 40px;
+	}
+
+	.wrapper .container .repetitor .desktopHero {
+		max-width: 54%;
+
+		> svg {
+			width: clamp(72px, 9vw, 150px);
+			height: auto;
+			right: 3%;
+		}
+
+		> span {
+			margin-top: 40px;
+			margin-bottom: 28px;
+			font-size: 18px;
+			line-height: 28px;
+		}
+
+		> img {
+			width: 100%;
+			height: auto;
+			margin-bottom: 32px;
+		}
+
+		> p {
+			font-size: clamp(16px, 1.8vw, 28px);
+			line-height: 1.5;
+			margin-bottom: 32px;
+		}
+
+		.free {
+			width: 100%;
+			gap: 16px;
+			padding: 16px 20px;
+			border-radius: 20px;
+			margin-bottom: 48px;
+
+			> span {
+				min-width: 60px;
+				min-height: 60px;
+			}
+
+			p span {
+				font-size: clamp(14px, 1.4vw, 23px);
+				line-height: 1.4;
+			}
+		}
+	}
+
+	.wrapper .container .features {
+		width: 58%;
+		gap: 24px;
+		justify-content: space-between;
+		align-items: flex-start;
+
+		> div {
+			min-width: 0;
+		}
+
+		p {
+			font-size: clamp(14px, 1.2vw, 20px);
+			line-height: 1.5;
+		}
+	}
+
+	.wrapper .repetitor > svg {
+		width: clamp(100px, 16vw, 260px);
+		height: auto;
+		left: 55%;
+		top: 42%;
+	}
+}
+
+@media (min-width: 712px) and (max-width: 1023px) {
+	.wrapper .container .features {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 24px;
+	}
+}
+
+@media (max-width: 711.98px) {
+	.wrapper {
+		background-image: none;
+		padding-bottom: 0;
+	}
+
+	.wrapper .container {
+		max-width: 600px;
+	}
+
+	.wrapper .container .repetitor .mobileHero {
+		background-position: center top;
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding-top: 16px;
+
+		> span {
+			font-size: 12px;
+			line-height: 18px;
+			padding: 4px 12px;
+			margin-top: 0;
+			margin-bottom: 16px;
+		}
+
+		> img {
+			width: min(90%, 440px);
+			height: auto;
+			margin-bottom: 16px;
+		}
+
+		> p {
+			font-size: 14px;
+			line-height: 21px;
+			max-width: 320px;
+			margin-bottom: clamp(210px, 50vw, 300px);
+		}
+
+		.free {
+			gap: 12px;
+			padding: 14px;
+			margin-bottom: 32px;
+			min-height: 68px;
+
+			> span {
+				flex-shrink: 0;
+			}
+
+			p {
+				min-width: 0;
+				line-height: 20px;
+
+				span {
+					font-size: 14px;
+					line-height: 20px;
+				}
+			}
+		}
+	}
+
+	.wrapper .container .features {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 24px 16px;
+		align-items: start;
+
+		p {
+			font-size: 14px;
+			line-height: 20px;
+			margin-top: 8px;
 		}
 	}
 }

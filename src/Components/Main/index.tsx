@@ -21,7 +21,7 @@ export function Main() {
 				<div className={styles.container}>
 					<div className={styles.repetitor}>
 						<div
-							className='max-md:bg-auto max-md:bg-top max-md:bg-no-repeat` max-md:block hidden'
+							className={`${styles.mobileHero} max-md:block hidden`}
 							style={{ backgroundImage: `url(${main360})` }}
 						>
 							<span className='inline-block py-1.5 px-6.5 bg-[#0867F9] text-white rounded-2xl text-[22px] leading-9 font-bold uppercase mt-15.25 mb-10.75 max-md:mt-2.75 max-md:mb-3.75 max-md:text-[7px] max-md:leading-2.75 max-md:px-2 max-md:py-0.75'>
@@ -58,7 +58,7 @@ export function Main() {
 								</button>
 							</div>
 						</div>
-						<div className='max-md:hidden'>
+						<div className={`${styles.desktopHero} max-md:hidden`}>
 							<span className='inline-block py-1.5 px-6.5 bg-[#0867F9] text-white rounded-2xl text-[22px] leading-9 font-bold uppercase mt-15.25 mb-10.75 max-md:mt-2.75 max-md:mb-3.75 max-md:text-[7px] max-md:leading-2.75 max-md:px-2 max-md:py-0.75'>
 								репетиторство по
 							</span>
@@ -94,7 +94,7 @@ export function Main() {
 							</div>
 						</div>
 						<Uravnenie />
-						<div className='max-md:justify-between max-md:text-center flex 3xl:gap-13.75 items-center'>
+						<div className={`${styles.features} max-md:justify-between max-md:text-center flex 3xl:gap-13.75 items-center`}>
 							<div>
 								<People />{' '}
 								<p className='max-md:text-[9px] max-md:mt-1.5 max-md:leading-3.25 mt-5 text-[22px] leading-8.25 font-medium'>

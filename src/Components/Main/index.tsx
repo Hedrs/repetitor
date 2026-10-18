@@ -94,7 +94,9 @@ export function Main() {
 							</div>
 						</div>
 						<Uravnenie />
-						<div className={`${styles.features} max-md:justify-between max-md:text-center flex 3xl:gap-13.75 items-center`}>
+						<div
+							className={`${styles.features} max-md:justify-between max-md:text-center flex gap-13.75 items-center`}
+						>
 							<div>
 								<People />{' '}
 								<p className='max-md:text-[9px] max-md:mt-1.5 max-md:leading-3.25 mt-5 text-[22px] leading-8.25 font-medium'>

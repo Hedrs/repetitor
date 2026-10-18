@@ -35,7 +35,12 @@ export function Modal({ startShow, isClose }: ModalProps) {
 				onClick={isClose}
 				className={`${styles.backdrop} bg-black cursor-pointer opacity-50 z-15`}
 			></div>
-			<div className={`${styles.dialog} min-w-2xl min-h-154 bg-white z-20 relative pl-13.25 pr-9 pb-21 rounded-[29px]`} role='dialog' aria-modal='true' aria-label='Написать мне'>
+			<div
+				className={`${styles.dialog} min-w-2xl min-h-154 bg-white z-20 relative pl-13.25 pr-9 pb-21 rounded-[29px]`}
+				role='dialog'
+				aria-modal='true'
+				aria-label='Написать мне'
+			>
 				<span
 					onClick={isClose}
 					className='absolute right-9 top-7.75 text-[#0867F9] cursor-pointer text-[22px]'
@@ -63,7 +68,7 @@ export function Modal({ startShow, isClose }: ModalProps) {
 					</Link>
 					<Link
 						className='flex items-center justify-between w-full rounded-2xl bg-slate-50 shadow-[0_4px_20px_rgba(0,0,0,0.08)] pl-5.5 pr-9.75 py-3.25 mt-5.75 mb-5.75'
-						to='https://vk.ru/away.php?to=https%3A%2F%2Ft.me%2Fneytfl1x&utf=1'
+						to='https://t.me/Neytfl1x'
 						target='_blank'
 					>
 						<span className='flex items-center gap-8.5'>

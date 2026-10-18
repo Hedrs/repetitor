@@ -1,7 +1,7 @@
 export function Sdam() {
 	return (
 		<svg
-			className='absolute top-27.75 right-27 w-37.75 h-17 max-md:hidden'
+			className='absolute top-27.75 right-27 w-37.75 h-17 max-md:hidden max-lg:hidden max-xl:hidden'
 			viewBox='0 0 151 68'
 			fill='none'
 			xmlns='http://www.w3.org/2000/svg'

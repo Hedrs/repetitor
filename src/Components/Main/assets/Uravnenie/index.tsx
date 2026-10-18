@@ -1,7 +1,7 @@
 export function Uravnenie() {
 	return (
 		<svg
-			className='absolute top-[45%] left-[42%] w-77.5 h-35.25 max-md:hidden max-md:w-21.25 max-md:h-9.5'
+			className='absolute top-[45%] left-[42%] w-77.5 h-35.25 max-md:hidden max-md:w-21.25 max-md:h-9.5 max-lg:hidden max-xl:hidden'
 			width='310'
 			height='141'
 			viewBox='0 0 310 141'
